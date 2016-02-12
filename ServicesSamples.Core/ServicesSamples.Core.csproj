@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <MinimumVisualStudioVersion>10.0</MinimumVisualStudioVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{60993AA9-6C28-49EC-BB38-3CE5DC3F3510}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ServicesSamples.Core</RootNamespace>
+    <AssemblyName>ServicesSamples.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Profile78</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="BindingProviders\ContactServicesBindingProvider.cs" />
+    <Compile Include="BindingProviders\NavigationBindingProvider.cs" />
+    <Compile Include="BindingProviders\PhotoDetailBindingProvider.cs" />
+    <Compile Include="Converters\ContactConverter.cs" />
+    <Compile Include="Infrastructure\AppService.cs" />
+    <Compile Include="Infrastructure\Container.cs" />
+    <Compile Include="Models\ContactFormMetadata.cs" />
+    <Compile Include="Models\ModelBase.cs" />
+    <Compile Include="Models\Photo.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Converters\CurrencyFormatConverter.cs" />
+    <Compile Include="ViewModels\AboutViewModel.cs" />
+    <Compile Include="BindingProviders\AboutBindingProvider.cs" />
+    <Compile Include="ViewModels\BasicNavigationViewModel.cs" />
+    <Compile Include="ViewModels\ContactEditorViewModel.cs" />
+    <Compile Include="ViewModels\ContactServicesViewModel.cs" />
+    <Compile Include="ViewModels\PhotoViewModel.cs" />
+    <Compile Include="ViewModels\ViewModel1.cs" />
+    <Compile Include="ViewModels\ViewModel2.cs" />
+    <Compile Include="BindingProviders\BasicNavigationBindingProvider.cs" />
+    <Compile Include="BindingProviders\ViewModel1BindingProvider.cs" />
+    <Compile Include="ViewModels\ModalNavigationViewModel.cs" />
+    <Compile Include="ViewModels\RootNavigationViewModel.cs" />
+    <Compile Include="ViewModels\ViewModel3.cs" />
+    <Compile Include="BindingProviders\ViewModel3BindingProvider.cs" />
+    <Compile Include="BindingProviders\ModalNavigationBindingProvider.cs" />
+    <Compile Include="BindingProviders\NestedNavigationBindingProvider.cs" />
+    <Compile Include="ViewModels\NestedNavigationViewModel.cs" />
+    <Compile Include="ViewModels\NestedStep1ViewModel.cs" />
+    <Compile Include="ViewModels\NestedStep2ViewModel.cs" />
+    <Compile Include="ViewModels\NestedStep3ViewModel.cs" />
+    <Compile Include="BindingProviders\NestedStep1BindingProvider.cs" />
+    <Compile Include="Models\RegistrationData.cs" />
+    <Compile Include="BindingProviders\NestedStep2BindingProvider.cs" />
+    <Compile Include="BindingProviders\NestedStep3BindingProvider.cs" />
+    <Compile Include="Extensions\StreamExtensions.cs" />
+    <Compile Include="Models\Category.cs" />
+    <Compile Include="Models\CategoryGroup.cs" />
+    <Compile Include="Models\Item.cs" />
+    <Compile Include="ModelServices\CategoryRepository.cs" />
+    <Compile Include="ModelServices\ICategoryRepository.cs" />
+    <Compile Include="ModelServices\IItemRepository.cs" />
+    <Compile Include="ModelServices\ItemRepository.cs" />
+    <Compile Include="ModelServices.Infrastructure\IDataRepository.cs" />
+    <Compile Include="ModelServices.Infrastructure\IDataService.cs" />
+    <Compile Include="ModelServices.Infrastructure\IEditableDataRepository.cs" />
+    <Compile Include="ViewModels\ItemDetailViewModel.cs" />
+    <Compile Include="ViewModels\SimpleListViewModel.cs" />
+    <Compile Include="BindingProviders\ListNavigationBindingProvider.cs" />
+    <Compile Include="BindingProviders\ItemDetailBindingProvider.cs" />
+    <Compile Include="ViewModels\ToastPresenterViewModel.cs" />
+    <Compile Include="ViewModels\MessagePresenterViewModel.cs" />
+    <Compile Include="ViewModels\ActionPresenterViewModel.cs" />
+    <Compile Include="ViewModels\ActivityPresenterViewModel.cs" />
+    <Compile Include="BindingProviders\MessagePresenterBindingProvider.cs" />
+    <Compile Include="BindingProviders\ActionPresenterBindingProvider.cs" />
+    <Compile Include="BindingProviders\ActivityPresenterBindingProvider.cs" />
+    <Compile Include="BindingProviders\ToastPresenterBindingProvider.cs" />
+    <Compile Include="ViewModels\CameraServicesViewModel.cs" />
+    <Compile Include="ViewModels\BrowserServicesViewModel.cs" />
+    <Compile Include="ViewModels\TelephonyServicesViewModel.cs" />
+    <Compile Include="ViewModels\SocialServicesViewModel.cs" />
+    <Compile Include="ViewModels\LocationServicesViewModel.cs" />
+    <Compile Include="ViewModels\NotificationServicesViewModel.cs" />
+    <Compile Include="ViewModels\PlatformServicesViewModel.cs" />
+    <Compile Include="BindingProviders\ServicesBindingProvider.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Windows" />
+    <Reference Include="Intersoft.Crosslight">
+      <HintPath>..\packages\Intersoft.Crosslight.5.0.5000.521\lib\Intersoft.Crosslight.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ItemGroup>
+    <EmbeddedResource Include="Assets\Data\Categories.xml" />
+    <EmbeddedResource Include="Assets\Data\Inventories.xml" />
+    <EmbeddedResource Include="Assets\Images\Thumbnail\AppleIpadRetina.jpg" />
+    <EmbeddedResource Include="Assets\Images\Thumbnail\AppleMacBookProMD102.jpg" />
+    <EmbeddedResource Include="Assets\Images\Thumbnail\BionicStableGrip.jpg" />
+    <EmbeddedResource Include="Assets\Images\Thumbnail\CanonEF16-35mm.jpg" />
+    <EmbeddedResource Include="Assets\Images\Thumbnail\CanonEF24-70mm.jpg" />
+    <EmbeddedResource Include="Assets\Images\Thumbnail\CanonEOS5DMarkIII.jpg" />
+    <EmbeddedResource Include="Assets\Images\Thumbnail\CanonSpeedlite580EX.jpg" />
+    <EmbeddedResource Include="Assets\Images\Thumbnail\CanonSpeedlite90EX.jpg" />
+    <EmbeddedResource Include="Assets\Images\Thumbnail\Diamondback2013.jpg" />
+    <EmbeddedResource Include="Assets\Images\Thumbnail\FIFA2013.jpg" />
+    <EmbeddedResource Include="Assets\Images\Thumbnail\FenderFA-100.jpg" />
+    <EmbeddedResource Include="Assets\Images\Thumbnail\FenderStarcaster.jpg" />
+    <EmbeddedResource Include="Assets\Images\Thumbnail\GranTurismo5.jpg" />
+    <EmbeddedResource Include="Assets\Images\Thumbnail\MU_AwayShirts.jpg" />
+    <EmbeddedResource Include="Assets\Images\Thumbnail\MU_HomeShirts.jpg" />
+    <EmbeddedResource Include="Assets\Images\Thumbnail\MarshallMG4Carbon.jpg" />
+    <EmbeddedResource Include="Assets\Images\Thumbnail\MensRHTaylorMadeComplete.jpg" />
+    <EmbeddedResource Include="Assets\Images\Thumbnail\NikeGolfVictoryHybrids.jpg" />
+    <EmbeddedResource Include="Assets\Images\Thumbnail\PS3_NBA.jpg" />
+    <EmbeddedResource Include="Assets\Images\Thumbnail\Playstation_Move.jpg" />
+    <EmbeddedResource Include="Assets\Images\Thumbnail\Playstation_WirelessHeadset.jpg" />
+    <EmbeddedResource Include="Assets\Images\Thumbnail\SamsungNoteII.jpg" />
+    <EmbeddedResource Include="Assets\Images\Thumbnail\SoccerShinguards.jpg" />
+    <EmbeddedResource Include="Assets\Images\Thumbnail\SonyPlaystation.jpg" />
+    <EmbeddedResource Include="Assets\Images\Thumbnail\SpaldingNBA.jpg" />
+    <EmbeddedResource Include="Assets\Images\Thumbnail\TaylorMadeGolfR11.jpg" />
+    <EmbeddedResource Include="Assets\Images\Thumbnail\TrueLinkswearGolfShoes.jpg" />
+    <EmbeddedResource Include="Assets\Images\Thumbnail\YamahaPSRS750.jpg" />
+    <EmbeddedResource Include="Assets\Images\Thumbnail\YamahaPSRS950.jpg" />
+    <EmbeddedResource Include="Assets\Images\Thumbnail\iPhone5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+</Project>

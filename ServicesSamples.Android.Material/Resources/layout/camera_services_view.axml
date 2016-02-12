@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ScrollViewStyle">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="Crosslight includes various pre-built mobile services that can be consumed directly from the ViewModel such as phone, location, social sharing and more. This sample demonstrates camera, library and media services such as capturing photo and playing a sound file."
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="50dp" />
+        <Button
+            android:text="Capture Photo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/CapturePhotoButton" />
+        <Button
+            android:text="Capture Video"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/CaptureVideoButton" />
+        <Button
+            android:text="Choose from Library"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ChooseLibraryButton" />
+        <Button
+            android:text="Play Sound"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/PlaySoundButton" />
+        <Button
+            android:text="Open YouTube Video"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/OpenYoutubeButton" />
+    </LinearLayout>
+</ScrollView>

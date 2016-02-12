@@ -1,0 +1,30 @@
+﻿<common:LayoutAwarePage
+    x:Class="ServicesSamples.WinRT.Views.MessagePresenterPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:common="using:ServicesSamples.WinRT.Common"
+    mc:Ignorable="d">
+
+    <Grid x:Name="LayoutRoot" Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="140"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0" Margin="12,17,0,28">
+            <TextBlock VerticalAlignment="Bottom" FontSize="21" Text="MESSAGE PRESENTER" />
+        </Grid>
+
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+            <StackPanel>
+                <TextBlock FontSize="18" TextWrapping="Wrap" Text="Presenter Services provides a built-in message presenter used to display a simple message to the view. The presenter service can be called from within the ViewModel thus makes it possible to and easy to centralize the UI application logic in the MVVM project." />
+                <Button Margin="0,30,0,0" Content="Show with Mesasge" Command="{Binding ShowPresenterCommand}" CommandParameter="Message" />
+                <Button Content="Show with Message, Title" Command="{Binding ShowPresenterCommand}" CommandParameter="MessageTitle" />
+                <Button Content="Show with Message, Title, Buttons" Command="{Binding ShowPresenterCommand}" CommandParameter="MessageTitleButtons" />
+            </StackPanel>
+        </Grid>
+    </Grid>
+
+</common:LayoutAwarePage>

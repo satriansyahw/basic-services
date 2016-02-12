@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ScrollViewStyle">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="With activity presenter, you can easily present an activity/progress view indicating that the app is busy processing user's request such as loading data from web service or updating data. The presenter can be called from within the ViewModel thus makes it easy to centralize the UI application logic in the MVVM project."
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="50dp" />
+        <TextView
+            android:text="Activity Presenter Styles"
+            style="@style/LargeLabelStyle" />
+        <Button
+            android:text="Large indicator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ShowButton" />
+        <Button
+            android:text="Small indicator with Text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ShowButton3" />
+        <Button
+            android:text="Translucent indicator with Text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ShowButton4" />
+    </LinearLayout>
+</ScrollView>

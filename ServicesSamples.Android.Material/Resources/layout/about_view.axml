@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ScrollViewStyle">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:text="Intersoft Crosslight makes native cross-platform mobile development truly a breeze -- thanks to its innovative data binding framework that makes MVVM possible in the iOS and Android world."
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="20dp" />
+        <TextView
+            android:text="This collection of samples demonstrate the cross-platform services supported in Crosslight such as navigation service presenter service, view service and various mobile-related services. These services can be called directly from ViewModel allowing you to write all UI logic using the MVVM design pattern. This enables application UI code reuse which ultimately increases overall code reusability to 95%."
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="20dp" />
+        <Button
+            android:text="Learn More"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/LearnMoreButton" />
+    </LinearLayout>
+</ScrollView>

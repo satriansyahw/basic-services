@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ScrollViewStyle">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="Crosslight includes various pre-built mobile services that can be consumed directly from the ViewModel such as phone, location, social sharing and more. This sample demonstrates the browser and mail services, such as navigating to a specific web page and composing mail with attachment."
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="50dp" />
+        <Button
+            android:text="Open Browser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/OpenBrowserButton" />
+        <Button
+            android:text="Compose Mail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ComposeMailButton" />
+        <Button
+            android:text="Compose Mail with Attachment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ComposeMailAdvancedButton" />
+    </LinearLayout>
+</ScrollView>

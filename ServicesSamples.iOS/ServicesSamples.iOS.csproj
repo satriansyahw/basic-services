@@ -1,0 +1,306 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProjectGuid>{D05183EE-050F-4940-91EC-3E657DA575CF}</ProjectGuid>
+    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>ServicesSamples.iOS</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <TargetFrameworkIdentifier>Xamarin.iOS</TargetFrameworkIdentifier>
+    <AssemblyName>ServicesSamplesiOS</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchLink>SdkOnly</MtouchLink>
+    <MtouchDebug>True</MtouchDebug>
+    <AssemblyName>MvvmSamplesiOS</AssemblyName>
+    <MtouchSdkVersion />
+    <MtouchProfiling>False</MtouchProfiling>
+    <MtouchFastDev>False</MtouchFastDev>
+    <MtouchArch>i386, x86_64</MtouchArch>
+    <MtouchUseLlvm>False</MtouchUseLlvm>
+    <MtouchUseThumb>False</MtouchUseThumb>
+    <MtouchUseSGen>False</MtouchUseSGen>
+    <MtouchUseRefCounting>False</MtouchUseRefCounting>
+    <MtouchOptimizePNGs>True</MtouchOptimizePNGs>
+    <MtouchI18n />
+    <MtouchExtraArgs>--linkskip=System.Core --linkskip=mscorlib</MtouchExtraArgs>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchLink>None</MtouchLink>
+    <AssemblyName>MvvmSamplesiOS</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchDebug>True</MtouchDebug>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <AssemblyName>ServicesSamples</AssemblyName>
+    <MtouchArch>ARMv7, ARMv7s, ARM64</MtouchArch>
+    <MtouchSdkVersion />
+    <MtouchLink>SdkOnly</MtouchLink>
+    <MtouchProfiling>False</MtouchProfiling>
+    <MtouchFastDev>False</MtouchFastDev>
+    <MtouchExtraArgs>--linkskip=System.Core --linkskip=mscorlib</MtouchExtraArgs>
+    <MtouchUseLlvm>False</MtouchUseLlvm>
+    <MtouchUseThumb>False</MtouchUseThumb>
+    <MtouchUseSGen>False</MtouchUseSGen>
+    <MtouchUseRefCounting>False</MtouchUseRefCounting>
+    <MtouchOptimizePNGs>True</MtouchOptimizePNGs>
+    <DeviceSpecificBuild>False</DeviceSpecificBuild>
+    <MtouchI18n />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Ad-Hoc|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\iPhone\Ad-Hoc</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <CodesignKey>iPhone Distribution</CodesignKey>
+    <BuildIpa>True</BuildIpa>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'AppStore|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\iPhone\AppStore</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <CodesignKey>iPhone Distribution</CodesignKey>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Infrastructure\AppInitializer.cs" />
+    <Compile Include="Main.cs" />
+    <Compile Include="AppDelegate.cs" />
+    <Compile Include="ViewControllers\ContactEditorViewController.cs" />
+    <Compile Include="ViewControllers\ContactEditorViewController.designer.cs">
+      <DependentUpon>ContactEditorViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\ContactServicesViewController.cs" />
+    <Compile Include="ViewControllers\ContactServicesViewController.designer.cs">
+      <DependentUpon>ContactServicesViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\MainViewController.cs" />
+    <None Include="Info.plist" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewControllers\AboutViewController.cs" />
+    <Compile Include="ViewControllers\AboutViewController.designer.cs">
+      <DependentUpon>AboutViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\BasicNavigationViewController.cs" />
+    <Compile Include="ViewControllers\BasicNavigationViewController.designer.cs">
+      <DependentUpon>BasicNavigationViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\NavigationViewController1.cs" />
+    <Compile Include="ViewControllers\NavigationViewController1.designer.cs">
+      <DependentUpon>NavigationViewController1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\NavigationViewController2.cs" />
+    <Compile Include="ViewControllers\NavigationViewController2.designer.cs">
+      <DependentUpon>NavigationViewController2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\NavigationParameterViewController.cs" />
+    <Compile Include="ViewControllers\NavigationParameterViewController2.designer.cs">
+      <DependentUpon>NavigationParameterViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\ModalNavigationViewController.cs" />
+    <Compile Include="ViewControllers\ModalNavigationViewController.designer.cs">
+      <DependentUpon>ModalNavigationViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\NavigationViewController3.cs" />
+    <Compile Include="ViewControllers\NavigationViewController3.designer.cs">
+      <DependentUpon>NavigationViewController3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\NestedNavigationViewController.cs" />
+    <Compile Include="ViewControllers\NestedNavigationViewController.designer.cs">
+      <DependentUpon>NestedNavigationViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\NestedStep1ViewController.cs" />
+    <Compile Include="ViewControllers\NestedStep1ViewController.designer.cs">
+      <DependentUpon>NestedStep1ViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\NestedStep2ViewController.cs" />
+    <Compile Include="ViewControllers\NestedStep2ViewController.designer.cs">
+      <DependentUpon>NestedStep2ViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\NestedStep3ViewController.cs" />
+    <Compile Include="ViewControllers\NestedStep3ViewController.designer.cs">
+      <DependentUpon>NestedStep3ViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\ItemDetailViewController.cs" />
+    <Compile Include="ViewControllers\ItemDetailViewController.designer.cs">
+      <DependentUpon>ItemDetailViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\ListNavigationViewController.cs" />
+    <Compile Include="Common\DefaultSettings.cs" />
+    <Compile Include="ViewControllers\PhotoDetailViewController.cs" />
+    <Compile Include="ViewControllers\PhotoDetailViewController.designer.cs">
+      <DependentUpon>PhotoDetailViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\ToastPresenterViewController.cs" />
+    <Compile Include="ViewControllers\ToastPresenterViewController.designer.cs">
+      <DependentUpon>ToastPresenterViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\MessagePresenterViewController.cs" />
+    <Compile Include="ViewControllers\ActionPresenterViewController.cs" />
+    <Compile Include="ViewControllers\ActivityPresenterViewController.cs" />
+    <Compile Include="ViewControllers\ActionPresenterViewController.designer.cs">
+      <DependentUpon>ActionPresenterViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\ActivityPresenterViewController.designer.cs">
+      <DependentUpon>ActivityPresenterViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\MessagePresenterViewController.designer.cs">
+      <DependentUpon>MessagePresenterViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\TelephonyServicesViewController.cs" />
+    <Compile Include="ViewControllers\TelephonyServicesViewController.designer.cs">
+      <DependentUpon>TelephonyServicesViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\CameraServicesViewController.cs" />
+    <Compile Include="ViewControllers\BrowserServicesViewController.cs" />
+    <Compile Include="ViewControllers\SocialServicesViewController.cs" />
+    <Compile Include="ViewControllers\LocationServicesViewController.cs" />
+    <Compile Include="ViewControllers\NotificationServicesViewController.cs" />
+    <Compile Include="ViewControllers\PlatformServicesViewController.cs" />
+    <Compile Include="ViewControllers\BrowserServicesViewController.designer.cs">
+      <DependentUpon>BrowserServicesViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\CameraServicesViewController.designer.cs">
+      <DependentUpon>CameraServicesViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\NotificationServicesViewController.designer.cs">
+      <DependentUpon>NotificationServicesViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\PlatformServicesViewController.designer.cs">
+      <DependentUpon>PlatformServicesViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\SocialServicesViewController.designer.cs">
+      <DependentUpon>SocialServicesViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\LocationServicesViewController.designer.cs">
+      <DependentUpon>LocationServicesViewController.cs</DependentUpon>
+    </Compile>
+    <InterfaceDefinition Include="Views\PhotoDetailViewController.xib" />
+    <InterfaceDefinition Include="Views\ContactServicesView.xib" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="Intersoft.Crosslight, Version=5.0.5000.1, Culture=neutral, PublicKeyToken=71f3e3261ac778b5, processorArchitecture=MSIL">
+      <HintPath>..\packages\Intersoft.Crosslight.5.0.5000.499\lib\Xamarin.iOS10\Intersoft.Crosslight.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Intersoft.Crosslight.iOS, Version=5.0.5000.1, Culture=neutral, PublicKeyToken=71f3e3261ac778b5, processorArchitecture=MSIL">
+      <HintPath>..\packages\Intersoft.Crosslight.5.0.5000.499\lib\Xamarin.iOS10\Intersoft.Crosslight.iOS.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Windows" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Xamarin.iOS" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterfaceDefinition Include="Views\AboutView.xib" />
+    <InterfaceDefinition Include="Views\BasicNavigationView.xib" />
+    <InterfaceDefinition Include="Views\NavigationContentView.xib" />
+    <InterfaceDefinition Include="Views\ModalNavigationView.xib" />
+    <InterfaceDefinition Include="Views\ModalNavigationContentView.xib" />
+    <InterfaceDefinition Include="Views\NestedNavigationView.xib" />
+    <InterfaceDefinition Include="Views\Step1ContentView.xib" />
+    <InterfaceDefinition Include="Views\Step2ContentView.xib" />
+    <InterfaceDefinition Include="Views\Step3ContentView.xib" />
+    <InterfaceDefinition Include="Views\ItemDetailViewController.xib" />
+    <InterfaceDefinition Include="Views\MessagePresenterView.xib" />
+    <InterfaceDefinition Include="Views\ToastPresenterView.xib" />
+    <InterfaceDefinition Include="Views\ActionPresenterView.xib" />
+    <InterfaceDefinition Include="Views\ActivityPresenterView.xib" />
+    <InterfaceDefinition Include="Views\TelephonyServicesView.xib" />
+    <InterfaceDefinition Include="Views\SocialServicesView.xib" />
+    <InterfaceDefinition Include="Views\NotificationServicesView.xib" />
+    <InterfaceDefinition Include="Views\LocationServicesView.xib" />
+    <InterfaceDefinition Include="Views\CameraServicesView.xib" />
+    <InterfaceDefinition Include="Views\BrowserServicesView.xib" />
+    <InterfaceDefinition Include="Views\PlatformServicesView.xib" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\creampaper.png" />
+    <BundleResource Include="Resources\creampaper%402x.png" />
+    <BundleResource Include="Resources\blizzard.png" />
+    <BundleResource Include="Resources\blizzard%402X.png" />
+    <BundleResource Include="Resources\welcome.mp3" />
+    <BundleResource Include="Resources\info.png" />
+    <BundleResource Include="Resources\Icon.png" />
+    <BundleResource Include="Resources\Icon%402x.png" />
+    <BundleResource Include="Resources\Icon-72.png" />
+    <BundleResource Include="Resources\Icon-72%402x.png" />
+    <BundleResource Include="Resources\Icon-Small.png" />
+    <BundleResource Include="Resources\Icon-Small%402x.png" />
+    <BundleResource Include="Resources\Icon-Small-50.png" />
+    <BundleResource Include="Resources\Icon-Small-50%402x.png" />
+    <BundleResource Include="Resources\Default.png" />
+    <BundleResource Include="Resources\Default%402x.png" />
+    <BundleResource Include="Resources\Default-568h%402x.png" />
+    <BundleResource Include="Resources\Default-Portrait.png" />
+    <BundleResource Include="Resources\Default-Landscape.png" />
+    <BundleResource Include="Resources\Default-Portrait%402x.png" />
+    <BundleResource Include="Resources\Default-Landscape%402x.png" />
+    <BundleResource Include="Resources\photo_placeholder.jpg" />
+    <BundleResource Include="Resources\frame.png" />
+    <BundleResource Include="Resources\frame%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ServicesSamples.Core\ServicesSamples.Core.csproj">
+      <Project>{60993AA9-6C28-49EC-BB38-3CE5DC3F3510}</Project>
+      <Name>ServicesSamples.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ITunesArtwork Include="iTunesArtwork" />
+    <ITunesArtwork Include="iTunesArtwork%402x" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+</Project>

@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{24886947-9D92-42E0-A0EB-C21B68BC05E2}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ServicesSamples.Android</RootNamespace>
+    <AssemblyName>ServicesSamples.Android.Material</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <AndroidApplication>true</AndroidApplication>
+    <AndroidResgenFile>Resources\Resource.Designer.cs</AndroidResgenFile>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <TargetFrameworkVersion>v5.0</TargetFrameworkVersion>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <MandroidI18n />
+    <JavaMaximumHeapSize>
+    </JavaMaximumHeapSize>
+    <AndroidLinkSkip>System.Core;mscorlib</AndroidLinkSkip>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <EmbedAssembliesIntoApk>False</EmbedAssembliesIntoApk>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <AndroidSupportedAbis>
+    </AndroidSupportedAbis>
+    <AndroidStoreUncompressedFileExtensions>
+    </AndroidStoreUncompressedFileExtensions>
+    <Debugger>Xamarin</Debugger>
+    <DevInstrumentationEnabled>True</DevInstrumentationEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidUseSharedRuntime>False</AndroidUseSharedRuntime>
+    <AndroidSupportedAbis>armeabi;armeabi-v7a;x86;arm64-v8a;x86_64</AndroidSupportedAbis>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Mono.Android" />
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.Windows" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Xamarin.Android.Support.Design, Version=1.0.0.0, Culture=neutral, PublicKeyToken=71f3e3261ac778b5">
+      <HintPath>..\packages\Crosslight.Xamarin.Android.Support.Design.23.1.1\lib\MonoAndroid10\Xamarin.Android.Support.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.v4, Version=1.0.0.0, Culture=neutral, PublicKeyToken=71f3e3261ac778b5">
+      <HintPath>..\packages\Crosslight.Xamarin.Android.Support.v4.23.1.1\lib\MonoAndroid10\Xamarin.Android.Support.v4.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.v7.AppCompat, Version=1.0.0.0, Culture=neutral, PublicKeyToken=71f3e3261ac778b5">
+      <HintPath>..\packages\Crosslight.Xamarin.Android.Support.v7.AppCompat.23.1.1\lib\MonoAndroid10\Xamarin.Android.Support.v7.AppCompat.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.v7.CardView, Version=1.0.0.0, Culture=neutral, PublicKeyToken=71f3e3261ac778b5">
+      <HintPath>..\packages\Crosslight.Xamarin.Android.Support.v7.CardView.23.1.1\lib\MonoAndroid10\Xamarin.Android.Support.v7.CardView.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.v7.RecyclerView, Version=1.0.0.0, Culture=neutral, PublicKeyToken=71f3e3261ac778b5">
+      <HintPath>..\packages\Crosslight.Xamarin.Android.Support.v7.RecyclerView.23.1.1\lib\MonoAndroid10\Xamarin.Android.Support.v7.RecyclerView.dll</HintPath>
+    </Reference>
+    <Reference Include="Intersoft.Crosslight">
+      <HintPath>..\packages\Intersoft.Crosslight.5.0.5000.521\lib\MonoAndroid10\Intersoft.Crosslight.dll</HintPath>
+    </Reference>
+    <Reference Include="Intersoft.Crosslight.Android">
+      <HintPath>..\packages\Intersoft.Crosslight.5.0.5000.521\lib\MonoAndroid10\Intersoft.Crosslight.Android.dll</HintPath>
+    </Reference>
+    <Reference Include="Intersoft.Crosslight.Android.v7">
+      <HintPath>..\packages\Intersoft.Crosslight.Android.v7.5.0.5000.521\lib\MonoAndroid10\Intersoft.Crosslight.Android.v7.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Infrastructure\AppInitializer.cs" />
+    <Compile Include="Resources\Resource.Designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Fragments\MainFragment.cs" />
+    <Compile Include="Fragments\About\AboutFragment.cs" />
+    <Compile Include="Fragments\Mobile Services\BrowserServicesFragment.cs" />
+    <Compile Include="Fragments\Mobile Services\CameraServicesFragment.cs" />
+    <Compile Include="Fragments\Mobile Services\ContactEditorFragment.cs" />
+    <Compile Include="Fragments\Mobile Services\LocationServicesFragment.cs" />
+    <Compile Include="Fragments\Mobile Services\NotificationServicesFragment.cs" />
+    <Compile Include="Fragments\Mobile Services\SocialServicesFragment.cs" />
+    <Compile Include="Fragments\Navigation\ItemDetailFragment.cs" />
+    <Compile Include="Fragments\Navigation\BasicNavigationFragment.cs" />
+    <Compile Include="Fragments\Navigation\ListNavigationFragment.cs" />
+    <Compile Include="Fragments\Navigation\ModalNavigationFragment.cs" />
+    <Compile Include="Fragments\Navigation\NavigationFragment1.cs" />
+    <Compile Include="Fragments\Navigation\NavigationFragment2.cs" />
+    <Compile Include="Fragments\Navigation\NavigationFragment3.cs" />
+    <Compile Include="Fragments\Navigation\NavigationParameterFragment.cs" />
+    <Compile Include="Fragments\Navigation\NestedNavigationFragment.cs" />
+    <Compile Include="Fragments\Navigation\NestedStep1Fragment.cs" />
+    <Compile Include="Fragments\Navigation\NestedStep2Fragment.cs" />
+    <Compile Include="Fragments\Navigation\NestedStep3Fragment.cs" />
+    <Compile Include="Fragments\Platform\PlatformServicesFragment.cs" />
+    <Compile Include="Fragments\Presenters\ActivityPresenterFragment.cs" />
+    <Compile Include="Fragments\Presenters\ActionPresenterFragment.cs" />
+    <Compile Include="Fragments\Presenters\MessagePresenterFragment.cs" />
+    <Compile Include="Fragments\Presenters\ToastPresenterFragment.cs" />
+    <Compile Include="Fragments\Mobile Services\ContactServicesFragment.cs" />
+    <Compile Include="Fragments\Mobile Services\PhotoDetailFragment.cs" />
+    <Compile Include="Fragments\Platform\TelephonyServicesFragment.cs" />
+    <Compile Include="Activities\AppActivity.cs" />
+    <Compile Include="Activities\LaunchActivity.cs" />
+    <Compile Include="Infrastructure\AndroidApp.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Resources\AboutResources.txt" />
+    <None Include="Assets\AboutAssets.txt" />
+    <None Include="Properties\AndroidManifest.xml" />
+    <AndroidResource Include="Resources\raw\welcome.mp3" />
+    <AndroidResource Include="Resources\values\styles.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\values\color.xml" />
+    <AndroidResource Include="Resources\drawable\info.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\icon.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\icon.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\icon.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\icon.png" />
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\icon.png" />
+    <AndroidResource Include="Resources\drawable\light_splash.png" />
+    <AndroidResource Include="Resources\layout\about_view.axml" />
+    <AndroidResource Include="Resources\layout\action_presenter_view.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\activity_presenter_view.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\basic_navigation_view.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\browser_services_view.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\camera_services_view.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\contact_services_view.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\item_detail_layout.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\list_group_layout.axml" />
+    <AndroidResource Include="Resources\layout\location_services_view.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\message_presenter_view.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\modal_navigation_content_view.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\modal_navigation_view.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\navigation_content_view.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\nested_navigation_view.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\notification_services_view.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\photo_detail_layout.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\platform_services_view.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\social_services_view.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\step1_content_view.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\step2_content_view.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\step3_content_view.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\telephony_services_view.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\toast_presenter_view.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ServicesSamples.Core\ServicesSamples.Core.csproj">
+      <Project>{60993AA9-6C28-49EC-BB38-3CE5DC3F3510}</Project>
+      <Name>ServicesSamples.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\photo_placeholder.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+     Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\ic_toolbar.png" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ScrollViewStyle">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="Crosslight includes various pre-built mobile services that can be consumed directly from the ViewModel such as phone, location, social sharing and more. This sample demonstrates the social sharing services such as showing the sharing action sheet and posting a tweet."
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="50dp" />
+        <Button
+            android:text="Show Share Actions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ShareButton" />
+        <Button
+            android:text="Show Social-only Share Actions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ShareSocialButton" />
+        <Button
+            android:text="Post to Facebook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/PostFacebookButton" />
+        <Button
+            android:text="Post to Twitter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/PostTwitterButton" />
+    </LinearLayout>
+</ScrollView>

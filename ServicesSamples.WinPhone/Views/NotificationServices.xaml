@@ -1,0 +1,38 @@
+﻿<Intersoft:PhoneApplicationPage
+    x:Class="ServicesSamples.WinPhone.Views.NotificationServices"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:Intersoft="clr-namespace:Intersoft.Crosslight.WinPhone;assembly=Intersoft.Crosslight.WinPhone"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="PortraitOrLandscape" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True">
+    <ScrollViewer>
+        <Grid x:Name="LayoutRoot" Background="Transparent">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <StackPanel Grid.Row="0" Margin="12,17,0,28">
+                <TextBlock Text="NOTIFICATION SERVICES" Style="{StaticResource PhoneTextNormalStyle}"/>
+            </StackPanel>
+
+            <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+                <StackPanel>
+                    <TextBlock Margin="10" TextWrapping="Wrap" Text="Crosslight includes comprehensive cross-platform mobile services such as telephony, location, messaging and more. This sample demonstrates some pre-built interesting ervices such as notification and reachability services. You can easily track the connection changes and write some UI logic -- all within the ViewModel project." />
+                    <Button Content="Get Current Connection Status" Command="{Binding InvokeServiceCommand}" CommandParameter="GetCurrentConnection" />
+                    <Button Content="Is Intersoft Site Reachable" Command="{Binding InvokeServiceCommand}" CommandParameter="GetReachability" />
+                    <Button Content="Monitor Connection Changes" Command="{Binding InvokeServiceCommand}" CommandParameter="MonitorConnection" />
+                    <Button Content="Schedule Local Notification" Command="{Binding InvokeServiceCommand}" CommandParameter="ScheduleNotification" />
+                </StackPanel>
+            </Grid>
+        </Grid>
+    </ScrollViewer>
+</Intersoft:PhoneApplicationPage>

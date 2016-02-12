@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ScrollViewStyle">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="Crosslight includes comprehensive services particular to location and mapping. With location services, you can query the current location, show a location in the map, as well as geocoding a friendly address to be located in the map. This sample also shows various mapping services that you can call from the ViewModel."
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="50dp" />
+        <Button
+            android:text="Get My Location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/GetMyLocationButton" />
+        <Button
+            android:text="Show My Location in Map"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ShowMyLocationButton" />
+        <Button
+            android:text="Show Intersoft Solutions in Map"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ShowLocationAddressButton" />
+        <Button
+            android:text="Show Directions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ShowDirectionsButton" />
+        <Button
+            android:text="Is My Location Near Intersoft?"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/CheckLocationButton" />
+    </LinearLayout>
+</ScrollView>

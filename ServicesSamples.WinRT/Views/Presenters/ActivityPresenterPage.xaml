@@ -1,0 +1,29 @@
+﻿<common:LayoutAwarePage
+    x:Class="ServicesSamples.WinRT.Views.ActivityPresenterPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:common="using:ServicesSamples.WinRT.Common"
+    mc:Ignorable="d">
+
+    <Grid x:Name="LayoutRoot" Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="140"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0" Margin="12,17,0,28">
+            <TextBlock VerticalAlignment="Bottom" FontSize="21" Text="ACTIVITY PRESENTER" />
+        </Grid>
+
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+            <StackPanel>
+                <TextBlock FontSize="18" TextWrapping="Wrap" Text="With activity presenter, you can easily present an activity/progress view indicating that the app is busy processing user's request such as loading data from web service or updating data. The presenter can be called from within the ViewModel thus makes it easy to centralize the UI application logic in the MVVM project." />
+                <Button Margin="0,30,0,0" Content="Large Indicator" Command="{Binding ShowPresenterCommand}" CommandParameter="Large" />
+                <Button Content="Small Indicator with text"  Command="{Binding ShowPresenterCommand}" CommandParameter="Small" />
+                <Button Content="Translucent Indicator with text"  Command="{Binding ShowPresenterCommand}" CommandParameter="Translucent" />
+            </StackPanel>
+        </Grid>
+    </Grid>
+</common:LayoutAwarePage>

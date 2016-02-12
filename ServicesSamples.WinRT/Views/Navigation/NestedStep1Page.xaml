@@ -1,0 +1,42 @@
+﻿<common:LayoutAwarePage
+    x:Class="ServicesSamples.WinRT.Views.NestedStep1Page"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:common="using:ServicesSamples.WinRT.Common"
+    mc:Ignorable="d">
+
+    <Grid x:Name="LayoutRoot" Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="140"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0" Margin="12,17,0,28">
+            <TextBlock VerticalAlignment="Bottom" FontSize="21" Text="STEP 1" />
+        </Grid>
+
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <TextBlock HorizontalAlignment="Center" Text="{Binding StatusText}" />
+            <StackPanel Grid.Row="1">
+                <TextBlock FontSize="18" Text="Email :" />
+                <TextBox Text="{Binding RegistrationData.Email, Mode=TwoWay}" />
+                <TextBlock FontSize="18" Text="Password :" />
+                <PasswordBox Password="{Binding RegistrationData.Password, Mode=TwoWay}" />
+                <Grid Margin="-2,15,0,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+                    <Button Content="Next" Command="{Binding NextCommand}" />
+                    <Button Grid.Column="1" Content="Cancel" Command="{Binding CancelCommand}" />
+                </Grid>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</common:LayoutAwarePage>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ScrollViewStyle">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="Crosslight includes various pre-built mobile services that can be consumed directly from the ViewModel such as phone, location, social sharing and more. The telephony service provides the interface to call a number, or to send a short message to a number."
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="50dp" />
+        <EditText
+            android:hint="Enter a phone number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/PhoneTextField"
+            android:phoneNumber="true" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:text="Call"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/CallButton"
+                android:layout_weight="1" />
+            <Button
+                android:text="Message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/MessageButton"
+                android:layout_weight="1" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

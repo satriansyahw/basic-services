@@ -1,0 +1,28 @@
+﻿<common:LayoutAwarePage
+    x:Class="ServicesSamples.WinRT.Views.PlatformServicesPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:common="using:ServicesSamples.WinRT.Common"
+    mc:Ignorable="d">
+
+    <Grid x:Name="LayoutRoot" Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="140"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0" Margin="12,17,0,28">
+            <TextBlock FontSize="21" VerticalAlignment="Bottom" Text="PLATFORM SERVICES" />
+        </Grid>
+
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+            <StackPanel>
+                <TextBlock FontSize="18" TextWrapping="Wrap" Text="View service is one of the fundamental services in Crosslight that abstracts the platform-specific view functionalities. Several of the most commonly used functions are running a process in UI thread or in a background thread with certain delay." />
+                <Button  Margin="0,10,0,0" Content="Run Action in UI Thread" Command="{Binding InvokeServiceCommand}" CommandParameter="RunUI" />
+                <Button Content="Run Action in Background Thread" Command="{Binding InvokeServiceCommand}" CommandParameter="RunBackground" />
+            </StackPanel>
+        </Grid>
+    </Grid>
+</common:LayoutAwarePage>

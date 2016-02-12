@@ -1,0 +1,36 @@
+﻿<Intersoft:PhoneApplicationPage
+    x:Class="ServicesSamples.WinPhone.Views.ActionPresenter"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:Intersoft="clr-namespace:Intersoft.Crosslight.WinPhone;assembly=Intersoft.Crosslight.WinPhone"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="PortraitOrLandscape" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True">
+    <ScrollViewer>
+        <Grid x:Name="LayoutRoot" Background="Transparent">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <StackPanel Grid.Row="0" Margin="12,17,0,28">
+                <TextBlock Text="ACTION PRESENTER" Style="{StaticResource PhoneTextNormalStyle}"/>
+            </StackPanel>
+
+            <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+                <StackPanel>
+                    <TextBlock Margin="10" TextWrapping="Wrap" Text="With action presenter, you can easily present a user interface that prompt users to take an action from a series of choices. The presenter can be called from within the ViewModel as well as handling the result callback that is independent to platform API. This makes it easy to centralize the UI application logic in the MVVM project." />
+                    <Button Content="Show with standard choises" Command="{Binding ShowPresenterCommand}" CommandParameter="Standard" />
+                    <Button Content="Show with highlight and cancel index" Command="{Binding ShowPresenterCommand}" CommandParameter="Highlight" />
+                </StackPanel>
+            </Grid>
+        </Grid>
+    </ScrollViewer>
+</Intersoft:PhoneApplicationPage>

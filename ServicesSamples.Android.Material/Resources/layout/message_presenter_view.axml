@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ScrollViewStyle">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="Presenter Services provides a built-in message presenter used to display a simple message to the view. The presenter service can be called from within the ViewModel thus makes it possible to and easy to centralize the UI application logic in the MVVM project."
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="50dp" />
+        <Button
+            android:text="Show with Message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ShowButton" />
+        <Button
+            android:text="Show with Message, Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ShowButton2" />
+        <Button
+            android:text="Show with Message, Title, Buttons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ShowButton3" />
+    </LinearLayout>
+</ScrollView>

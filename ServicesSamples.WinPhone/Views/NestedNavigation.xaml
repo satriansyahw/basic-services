@@ -1,0 +1,36 @@
+﻿<Intersoft:PhoneApplicationPage
+    x:Class="ServicesSamples.WinPhone.Views.NestedNavigation"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    xmlns:Intersoft="clr-namespace:Intersoft.Crosslight.WinPhone;assembly=Intersoft.Crosslight.WinPhone"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="PortraitOrLandscape" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True">
+    <ScrollViewer>
+        <Grid x:Name="LayoutRoot" Background="Transparent">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <StackPanel Grid.Row="0" Margin="12,17,0,28">
+                <TextBlock Text="NESTED NAVIGATION" Style="{StaticResource PhoneTextNormalStyle}"/>
+            </StackPanel>
+
+            <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+                <StackPanel>
+                    <TextBlock Margin="10" TextWrapping="Wrap" Text="In addition to basic modal navigation, the Crosslight Navigation Services also supports advanced mdoal navigation that allows you to perform navigation within the modal view context. Called 'Nested Modal Navigation', this feature is particularly useful when you need to capture numerous data input that are splitted to multiple views (wizard-like)." />
+                    <TextBlock Margin="10" TextWrapping="Wrap" Text="The navigation service manages the navigation stack made during the modal sesion. When the Close method is called, it automatically discard the entire modal navigation stack, and return to the initiator view." />
+                    <Button Content="Start Modal Navigation" Command="{Binding NavigateModalCommand}" CommandParameter="" />
+                </StackPanel>
+            </Grid>
+        </Grid>
+    </ScrollViewer>
+</Intersoft:PhoneApplicationPage>

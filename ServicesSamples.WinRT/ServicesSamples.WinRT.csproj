@@ -1,0 +1,395 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{22262656-2434-42CA-96BC-5791FEC66F9C}</ProjectGuid>
+    <OutputType>AppContainerExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ServicesSamples.WinRT</RootNamespace>
+    <AssemblyName>ServicesSamples.WinRT</AssemblyName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{BC8A1FFA-BEE3-4634-8014-F334798102B3};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <PackageCertificateKeyFile>MvvmSamples.WinRT_TemporaryKey.pfx</PackageCertificateKeyFile>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <TargetPlatformVersion>8.1</TargetPlatformVersion>
+    <MinimumVisualStudioVersion>12</MinimumVisualStudioVersion>
+    <TargetFrameworkVersion />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\ARM\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM'">
+    <OutputPath>bin\ARM\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Common\BindableBase.cs" />
+    <Compile Include="Common\LayoutAwarePage.cs" />
+    <Compile Include="Common\RichTextColumns.cs" />
+    <Compile Include="Common\SplitPage.cs" />
+    <Compile Include="Converters\ByteToImageConverter.cs" />
+    <Compile Include="Converters\DecimalToDoubleConverter.cs" />
+    <Compile Include="Converters\StringFormatConverter.cs" />
+    <Compile Include="Data\SampleDataSource.cs" />
+    <Compile Include="Infrastructure\AppInitializer.cs" />
+    <Compile Include="Infrastructure\ApplicationStateService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\About\AboutPage.xaml.cs">
+      <DependentUpon>AboutPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Mobile Services\BrowserServicesPage.xaml.cs">
+      <DependentUpon>BrowserServicesPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Mobile Services\CameraServicesPage.xaml.cs">
+      <DependentUpon>CameraServicesPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Mobile Services\LocationServicesPage.xaml.cs">
+      <DependentUpon>LocationServicesPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Mobile Services\NotificationServicesPage.xaml.cs">
+      <DependentUpon>NotificationServicesPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Mobile Services\SocialServicesPage.xaml.cs">
+      <DependentUpon>SocialServicesPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Mobile Services\TelephonyServicesPage.xaml.cs">
+      <DependentUpon>TelephonyServicesPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Navigation\BasicNavigationPage.xaml.cs">
+      <DependentUpon>BasicNavigationPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Navigation\ItemDetailPage.xaml.cs">
+      <DependentUpon>ItemDetailPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Navigation\ListNavigationPage.xaml.cs">
+      <DependentUpon>ListNavigationPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Navigation\ModalNavigationPage.xaml.cs">
+      <DependentUpon>ModalNavigationPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Navigation\NavigationPage1.xaml.cs">
+      <DependentUpon>NavigationPage1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Navigation\NavigationPage2.xaml.cs">
+      <DependentUpon>NavigationPage2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Navigation\NavigationPage3.xaml.cs">
+      <DependentUpon>NavigationPage3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Navigation\NavigationParameterPage.xaml.cs">
+      <DependentUpon>NavigationParameterPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Navigation\NestedNavigationPage.xaml.cs">
+      <DependentUpon>NestedNavigationPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Navigation\NestedStep1Page.xaml.cs">
+      <DependentUpon>NestedStep1Page.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Navigation\NestedStep2Page.xaml.cs">
+      <DependentUpon>NestedStep2Page.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Navigation\NestedStep3Page.xaml.cs">
+      <DependentUpon>NestedStep3Page.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PhotoView.xaml.cs">
+      <DependentUpon>PhotoView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Platform\PlatformServicesPage.xaml.cs">
+      <DependentUpon>PlatformServicesPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Presenters\ActionPresenterPage.xaml.cs">
+      <DependentUpon>ActionPresenterPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Presenters\ActivityPresenterPage.xaml.cs">
+      <DependentUpon>ActivityPresenterPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Presenters\MessagePresenterPage.xaml.cs">
+      <DependentUpon>MessagePresenterPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Presenters\ToastPresenterPage.xaml.cs">
+      <DependentUpon>ToastPresenterPage.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+    <None Include="MvvmSamples.WinRT_TemporaryKey.pfx" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\Images\Logo.scale-100.png" />
+    <Content Include="Assets\Images\Logo.scale-140.png" />
+    <Content Include="Assets\Images\Logo.scale-180.png" />
+    <Content Include="Assets\Images\Logo.scale-80.png" />
+    <Content Include="Assets\Images\SmallLogo.scale-100.png" />
+    <Content Include="Assets\Images\SmallLogo.scale-140.png" />
+    <Content Include="Assets\Images\SmallLogo.scale-180.png" />
+    <Content Include="Assets\Images\SmallLogo.scale-80.png" />
+    <Content Include="Assets\Images\SmallLogo.targetsize-16.png" />
+    <Content Include="Assets\Images\SmallLogo.targetsize-256.png" />
+    <Content Include="Assets\Images\SmallLogo.targetsize-32.png" />
+    <Content Include="Assets\Images\SmallLogo.targetsize-48.png" />
+    <Content Include="Assets\Images\SplashScreen.scale-100.png" />
+    <Content Include="Assets\Images\SplashScreen.scale-140.png" />
+    <Content Include="Assets\Images\SplashScreen.scale-180.png" />
+    <Content Include="Assets\Images\StoreLogo.scale-100.png" />
+    <Content Include="Assets\Images\StoreLogo.scale-140.png" />
+    <Content Include="Assets\Images\StoreLogo.scale-180.png" />
+    <Content Include="Assets\Images\WideLogo.scale-100.png" />
+    <Content Include="Assets\Images\WideLogo.scale-140.png" />
+    <Content Include="Assets\Images\WideLogo.scale-180.png" />
+    <Content Include="Assets\Images\WideLogo.scale-80.png" />
+    <Content Include="Assets\info.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\welcome.mp3" />
+    <Content Include="Common\Readme.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="Assets\Styles\AppStyles.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Assets\Styles\IntersoftUIStyles.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Assets\Styles\StandardStyles.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\About\AboutPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Mobile Services\BrowserServicesPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Mobile Services\CameraServicesPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Mobile Services\LocationServicesPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Mobile Services\NotificationServicesPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Mobile Services\SocialServicesPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Mobile Services\TelephonyServicesPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Navigation\BasicNavigationPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Navigation\ItemDetailPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Navigation\ListNavigationPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Navigation\ModalNavigationPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Navigation\NavigationPage1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Navigation\NavigationPage2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Navigation\NavigationPage3.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Navigation\NavigationParameterPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Navigation\NestedNavigationPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Navigation\NestedStep1Page.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Navigation\NestedStep2Page.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Navigation\NestedStep3Page.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\PhotoView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Platform\PlatformServicesPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Presenters\ActionPresenterPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Presenters\ActivityPresenterPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Presenters\MessagePresenterPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Presenters\ToastPresenterPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ServicesSamples.Core\ServicesSamples.Core.csproj">
+      <Project>{60993aa9-6c28-49ec-bb38-3ce5dc3f3510}</Project>
+      <Name>ServicesSamples.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Intersoft.Crosslight, Version=5.0.5000.1, Culture=neutral, PublicKeyToken=71f3e3261ac778b5, processorArchitecture=MSIL">
+      <HintPath>..\packages\Intersoft.Crosslight.5.0.5000.499\lib\NetCore45\Intersoft.Crosslight.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Intersoft.Crosslight.WinRT, Version=5.0.5000.1, Culture=neutral, PublicKeyToken=71f3e3261ac778b5, processorArchitecture=MSIL">
+      <HintPath>..\packages\Intersoft.Crosslight.5.0.5000.499\lib\NetCore45\Intersoft.Crosslight.WinRT.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '12.0' ">
+    <VisualStudioVersion>12.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

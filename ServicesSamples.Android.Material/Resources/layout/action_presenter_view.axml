@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ScrollViewStyle">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="With action presenter, you can easily present a user interface that prompt users to take an action from a series of choices. The presenter can be called from within the ViewModel as well as handling the result callback that is independent to platform API. This makes it easy to centralize the UI application logic in the MVVM project."
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="50dp" />
+        <Button
+            android:text="Show with standard choices"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ShowButton" />
+        <Button
+            android:text="Show with highlight and cancel index"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ShowButton2" />
+    </LinearLayout>
+</ScrollView>

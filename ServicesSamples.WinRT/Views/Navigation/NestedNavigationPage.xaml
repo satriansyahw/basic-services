@@ -1,0 +1,28 @@
+﻿<common:LayoutAwarePage
+    x:Class="ServicesSamples.WinRT.Views.NestedNavigationPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:common="using:ServicesSamples.WinRT.Common"
+    mc:Ignorable="d">
+
+    <Grid x:Name="LayoutRoot" Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="140"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0" Margin="12,17,0,28">
+            <TextBlock VerticalAlignment="Bottom" FontSize="21" Text="NESTED NAVIGATION" />
+        </Grid>
+
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+            <StackPanel>
+                <TextBlock  FontSize="18" TextWrapping="Wrap" Text="In addition to basic modal navigation, the Crosslight Navigation Services also supports advanced mdoal navigation that allows you to perform navigation within the modal view context. Called 'Nested Modal Navigation', this feature is particularly useful when you need to capture numerous data input that are splitted to multiple views (wizard-like)." />
+                <TextBlock  Margin="0,10,0,0" FontSize="18" TextWrapping="Wrap" Text="The navigation service manages the navigation stack made during the modal sesion. When the Close method is called, it automatically discard the entire modal navigation stack, and return to the initiator view." />
+                <Button  Margin="0,10,0,0"  Content="Start Modal Navigation" Command="{Binding NavigateModalCommand}" CommandParameter="" />
+            </StackPanel>
+        </Grid>
+    </Grid>
+</common:LayoutAwarePage>

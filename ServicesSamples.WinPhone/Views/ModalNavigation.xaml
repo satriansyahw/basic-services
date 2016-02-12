@@ -1,0 +1,39 @@
+﻿<Intersoft:PhoneApplicationPage
+    x:Class="ServicesSamples.WinPhone.Views.ModalNavigation"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    xmlns:Intersoft="clr-namespace:Intersoft.Crosslight.WinPhone;assembly=Intersoft.Crosslight.WinPhone"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="PortraitOrLandscape" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True">
+    <ScrollViewer>
+        <Grid x:Name="LayoutRoot" Background="Transparent">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <StackPanel Grid.Row="0" Margin="12,17,0,28">
+                <TextBlock Text="MODAL NAVIGATION" Style="{StaticResource PhoneTextNormalStyle}"/>
+            </StackPanel>
+
+            <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+                <StackPanel>
+                    <TextBlock Margin="10" TextWrapping="Wrap" Text="Navigation Services supports a special navigation type called modal navigation. It is particularly useful to present a view that wait for user input. You can return a navigation result indicating whether user provided the input or cancelled the input, as well as capturing additional data as the result of the modal navigation." />
+                    <Button Content="Navigate in Modal Mode" Command="{Binding NavigateModalCommand}" CommandParameter="Default" />
+                    <TextBlock Margin="10" Text="Modal Navigation Transition" />
+                    <Button Content="Slide" Command="{Binding NavigateModalCommand}" CommandParameter="Slide"/>
+                    <Button Content="Flip" Command="{Binding NavigateModalCommand}" CommandParameter="Flip"/>
+                    <Button Content="Fade" Command="{Binding NavigateModalCommand}" CommandParameter="Fade"/>
+                </StackPanel>
+            </Grid>
+        </Grid>
+    </ScrollViewer>
+</Intersoft:PhoneApplicationPage>

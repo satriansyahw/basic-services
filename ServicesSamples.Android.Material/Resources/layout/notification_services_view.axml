@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ScrollViewStyle">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="Crosslight includes comprehensive cross-platform mobile services such as telephony, location, messaging and more. This sample demonstrates some pre-built interesting ervices such as notification and reachability services. You can easily track the connection changes and write some UI logic -- all within the ViewModel project."
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="50dp" />
+        <Button
+            android:text="Get Current Connection Status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/GetCurrentConnectionButton" />
+        <Button
+            android:text="Is Intersoft Site Reachable?"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/GetReachabilityButton" />
+        <Button
+            android:text="Monitor Connection Changes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/MonitorConnectionButton" />
+        <Button
+            android:text="Schedule Local Notification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ScheduleNotificationButton" />
+    </LinearLayout>
+</ScrollView>

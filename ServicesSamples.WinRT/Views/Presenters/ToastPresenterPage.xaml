@@ -1,0 +1,46 @@
+﻿<common:LayoutAwarePage
+    x:Class="ServicesSamples.WinRT.Views.ToastPresenterPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:common="using:ServicesSamples.WinRT.Common"
+    mc:Ignorable="d">
+
+    <Grid x:Name="LayoutRoot" Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="140"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0" Margin="12,17,0,28">
+            <TextBlock VerticalAlignment="Bottom" Text="TOAST PRESENTER" FontSize="21" />
+        </Grid>
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+            <StackPanel>
+                <TextBlock TextWrapping="Wrap" FontSize="18" Text="Crosslight provides a special presenter called Toast Presenter, which is useful to display a light notification that goes away automatically after a certain interval. It includes various settings that you can customize via ToastSettings. Integrated directly to the ViewModel, you can easily present a toast as part of the UI application logic." />
+                <Grid Margin="0,30,0,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <Button Content="Message" Grid.Column="0" Grid.Row="0" Command="{Binding ShowPresenterCommand}" CommandParameter="Message" Grid.RowSpan="2" />
+                    <Button Content="Message, Title" Grid.Column="1" Grid.Row="0" Command="{Binding ShowPresenterCommand}" CommandParameter="MessageTitle" Grid.RowSpan="2" />
+                    <Button Content="+Image" Grid.Column="0" Grid.Row="2" Command="{Binding ShowPresenterCommand}" CommandParameter="MessageTitleImage" />
+                    <Button Content="Use Overlay" Grid.Column="1" Grid.Row="2" Command="{Binding ShowPresenterCommand}" CommandParameter="UseOverlay" />
+                    <Button Content="Top Gravity" Grid.Column="0" Grid.Row="3" Command="{Binding ShowPresenterCommand}" CommandParameter="Top" />
+                    <Button Content="Center Gravity" Grid.Column="1" Grid.Row="3" Command="{Binding ShowPresenterCommand}" CommandParameter="Center" />
+                    <Button Content="Relative to View" Grid.Column="0" Grid.Row="4" Command="{Binding ShowPresenterCommand}" CommandParameter="UseOwner" />
+                    <Button Content="Short Duration" Grid.Column="1" Grid.Row="4" Command="{Binding ShowPresenterCommand}" CommandParameter="ShortDuration" />
+                </Grid>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</common:LayoutAwarePage>

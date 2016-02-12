@@ -1,0 +1,30 @@
+﻿<common:LayoutAwarePage
+    x:Class="ServicesSamples.WinRT.Views.BasicNavigationPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:common="using:ServicesSamples.WinRT.Common"
+    mc:Ignorable="d">
+
+    <Grid x:Name="LayoutRoot" Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="140"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0" Margin="12,17,0,28">
+            <TextBlock VerticalAlignment="Bottom" FontSize="21" Text="BASIC NAVIGATION" />
+        </Grid>
+
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+            <StackPanel>
+                <TextBlock FontSize="18"  TextWrapping="Wrap" Text="Navigation Services enables you to perform navigation from within the ViewModel. You can navigate to a ViewModel by providing the type, or a known identifier." />
+                <Button Margin="0,10,0,0" Content="Navigate with ViewModel Type" Command="{Binding NavigateTypeCommand}" />
+                <Button Content="Navigate with Identifier" Command="{Binding NavigateIdentifierCommand}" />
+                <TextBox Text="{Binding InputText, Mode=TwoWay}" />
+                <Button Content="Navigate with Parameter" Command="{Binding NavigateParameterCommand}" CommandParameter="{Binding InputText}" />
+            </StackPanel>
+        </Grid>
+    </Grid>
+</common:LayoutAwarePage>

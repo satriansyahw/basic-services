@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ScrollViewStyle">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="View service is one of the fundamental services in Crosslight that abstracts the platform-specific view functionalities. Several of the most commonly used functions are running a process in UI thread or in a background thread with certain delay."
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="50dp" />
+        <Button
+            android:text="Run Action in UI Thread"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/RunUIButton" />
+        <Button
+            android:text="Run Action in Background Thread"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/RunBackgroundButton" />
+    </LinearLayout>
+</ScrollView>

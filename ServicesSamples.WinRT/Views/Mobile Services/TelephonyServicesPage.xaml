@@ -1,0 +1,29 @@
+﻿<common:LayoutAwarePage
+    x:Class="ServicesSamples.WinRT.Views.TelephonyServicesPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"    
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:common="using:ServicesSamples.WinRT.Common"
+    mc:Ignorable="d">
+
+    <Grid x:Name="LayoutRoot" Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="140"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0" Margin="12,17,0,28">
+            <TextBlock FontSize="21" VerticalAlignment="Bottom" Text="TELEPHONY SERVICES" />
+        </Grid>
+
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+            <StackPanel>
+                <TextBlock FontSize="18"  TextWrapping="Wrap" Text="Crosslight includes various pre-built mobile services that can be consumed directly from the ViewModel such as phone, location, social sharing and more. The telephony service provides the interface to call a number, or to send a short message to a number." />
+                <TextBox  Margin="0,10,0,0" Text="{Binding PhoneNumber, Mode=TwoWay}" />
+                <Button Margin="0,20,0,0" Content="Call" Command="{Binding InvokeServiceCommand}" CommandParameter="Call" />
+                <Button Content="Message" Command="{Binding InvokeServiceCommand}" CommandParameter="Message" />
+            </StackPanel>
+        </Grid>
+    </Grid>
+</common:LayoutAwarePage>

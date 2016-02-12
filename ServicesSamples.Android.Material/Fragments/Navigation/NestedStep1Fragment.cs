@@ -1,0 +1,45 @@
+using System;
+using Android.Runtime;
+using Intersoft.Crosslight;
+using Intersoft.Crosslight.Android.v7;
+using ServicesSamples.ViewModels;
+
+namespace ServicesSamples.Android.Fragments
+{
+    [ImportBinding(typeof(NestedStep1BindingProvider))]
+    public class NestedStep1Fragment : Fragment<NestedStep1ViewModel>
+    {
+        #region Constructors
+
+        public NestedStep1Fragment()
+        {
+        }
+
+        public NestedStep1Fragment(IntPtr javaReference, JniHandleOwnership transfer)
+            : base(javaReference, transfer)
+        {
+        }
+
+        #endregion
+
+        #region Properties
+
+        protected override int ContentLayoutId
+        {
+            get { return Resource.Layout.step1_content_view; }
+        }
+
+        #endregion
+
+        #region Methods
+
+        protected override void Initialize()
+        {
+            base.Initialize();
+
+            this.IconId = Resource.Drawable.ic_toolbar;
+        }
+
+        #endregion
+    }
+}

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ScrollViewStyle">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="Navigation Services supports a special navigation type called modal navigation. It is particularly useful to present a view that wait for user input. You can return a navigation result indicating whether user provided the input or cancelled the input, as well as capturing additional data as the result of the modal navigation."
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="20dp" />
+        <Button
+            android:text="Navigate in Modal Mode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/NavigateModalButton" />
+        <TextView
+            android:text="Modal Navigation Transition"
+            android:paddingTop="20dp"
+            style="@style/LargeLabelStyle" />
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical">
+                    <Button
+                        android:text="Slide"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/SlideButton"
+                        android:layout_weight="1" />
+                    <Button
+                        android:text="Fade"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/FadeButton"
+                        android:layout_weight="1" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
