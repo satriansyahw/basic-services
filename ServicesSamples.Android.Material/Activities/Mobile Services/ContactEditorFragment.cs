@@ -24,11 +24,6 @@ namespace ServicesSamples.Android
 
 		#region Properties
 
-        protected override bool ShowActionBarUpButton
-        {
-            get { return true; }
-        }
-
         protected override int MenuLayoutId
         {
             get { return Resource.Layout.actionbareditinglayout; }

@@ -21,15 +21,6 @@ namespace ServicesSamples.Android.Fragments
 
         #endregion
 
-        #region Properties
-
-        protected override bool ShowActionBarUpButton
-        {
-            get { return true; }
-        }
-
-        #endregion
-
         #region Methods
 
         protected override void Initialize()
